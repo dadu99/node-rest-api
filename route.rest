@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+
+###
+GET http://localhost:3000/subscribers/65ddb460cfe8b12460011916
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Alexandru Popa",
+    "subscribedToChannel" : "Magazines CEG"
+}
+
+###
+DELETE http://localhost:3000/subscribers/65ddb641cfe8b1246001191a
+
+###
+PATCH http://localhost:3000/subscribers/65ddb69acfe8b1246001191e
+Content-Type: application/json
+
+{
+    "name": "Alexandru Mihai Popa",
+    "subscribedToChannel": "DIGI Magazines&News"
+
+}
